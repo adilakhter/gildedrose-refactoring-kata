@@ -3,11 +3,20 @@ package com.gildedrose
 import com.typesafe.scalalogging.LazyLogging
 
 class GildedRose extends LazyLogging {
-  def updateQuality(items: Seq[Item], ruleSet: Seq[Rule] = GildedRose.ruleSet): Seq[Item] = {
 
+  /**
+    * Updates the Quantity of Items with the provided RuleSet. If nothing is provided, it uses the default 
+    * RuleSet provided by GuildedRose Executor. 
+    *
+    * Note it also update the sell by date (e.g, `SellIn`) property of items. 
+    * 
+    * @param items Items to Update
+    * @param ruleSet Business Rules to adhere to when updating. 
+    * @return resultant Items
+    */
+  def updateQuality(items: Seq[Item], ruleSet: Seq[Rule] = GildedRose.ruleSet): Seq[Item] = {
     val executionResults = RuleExecutor.execute(ruleSet, items)
     logger.debug(s"Execution Result ${executionResults}")
-
     executionResults.map(_.resultantItem)
   }
 }

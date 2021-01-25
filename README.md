@@ -8,7 +8,7 @@ This project outlines a solution to the [GildedRose Refactoring Kata](https://gi
 This project depends on the following. Please ensure that it is installed in the development environment.
 
 - Scala 2.13.4
-- SBT
+- SBT 1.4.6
 - Git
 
 
@@ -22,6 +22,7 @@ $ cd gildedrose-refactoring-kata
 $ sbt test
 ```
 
+To get started with the code, please see [GildedRose.scala](https://github.com/adilakhter/gildedrose-refactoring-kata/blob/master/src/main/scala/com/gildedrose/GildedRose.scala).
 
 ## Requirements
 
