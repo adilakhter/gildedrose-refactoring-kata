@@ -25,7 +25,7 @@ $ sbt test
 
 ## Requirements
 
-Please take a look at `GuildedRoseRequirements.txt` at the root of the project. It is also outlined [here](https://github.com/emilybache/GildedRose-Refactoring-Kata/blob/master/GildedRoseRequirements.txt).
+Please take a look at `docs\GuildedRoseRequirements.txt`. It is also outlined [here](https://github.com/emilybache/GildedRose-Refactoring-Kata/blob/master/GildedRoseRequirements.txt).
 
 
 ## See Also
